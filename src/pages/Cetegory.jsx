@@ -14,6 +14,7 @@ function Cetegory(props) {
             const res = await fetch("https://fakestoreapi.com/products");
             const data = await res.json();
             setProduct(data);
+            console.log(data)
         }
         find();
     }, []);
@@ -52,6 +53,7 @@ function Cetegory(props) {
                                 display: "flex",
                                 alignItems: "center",
                                 flexDirection: "column",
+                                borderRadius:'8px',
                                 justifyContent: "space-evenly",
                             }}
                         >
